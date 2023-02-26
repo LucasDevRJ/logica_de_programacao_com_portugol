@@ -11,7 +11,7 @@ programa
 
 		calculo = (num1 + num2) * num3
 
-		escreva(calculo)
+		escreva("(", num1, " + ", num2 ,") x ", num3, " = ", calculo)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 109; 
+ * @POSICAO-CURSOR = 200; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
