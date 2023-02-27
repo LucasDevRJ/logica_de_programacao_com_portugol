@@ -1,17 +1,15 @@
-//Exemplo 23: gasolina com a leitura dos dados pelo teclado
+//Exemplo 25: atribuição por valor lido do teclado
 programa
 {
 	
 	funcao inicio()
 	{
-		real precoGasolina, total, qtdLitros
+		inteiro qtdAlunos
 
-		leia(precoGasolina)
-		leia(qtdLitros)
+		escreva("Digite a quantidade de alunos: ")
+		leia(qtdAlunos)
 
-		total = precoGasolina * qtdLitros
-
-		escreva("Você deve pagar R$ ", total)
+		escreva("Quantidade de alunos presentes: ", qtdAlunos)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +17,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 215; 
+ * @POSICAO-CURSOR = 152; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
