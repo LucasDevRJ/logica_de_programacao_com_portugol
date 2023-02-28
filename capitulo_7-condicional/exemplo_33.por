@@ -1,20 +1,19 @@
-//Exemplo 31: condicional simples para verificar se uma pessoa é maior de idade
+//Exemplo 33: condicional simples
+//Sistema para indicar qual documento deve ser solicitado de acordo com a nacionalidade
 programa
 {
 	
 	funcao inicio()
 	{
-		inteiro idade
+		cadeia paisDeNascimento
 
-		escreva("Digite sua idade: ")
-		leia(idade)
+		escreva("Digite seu país de nascimento: ")
+		leia(paisDeNascimento)
 
-		se (idade >= 18) {
-			escreva("Maior de idade")
-		}
-
-		se (idade < 18) {
-			escreva("Menor de idade")
+		se (paisDeNascimento == "Brasil") {
+			escreva("Solicitar número de CPF.")
+		} senao {
+			escreva("Solicitar número do passaporte.")
 		}
 	}
 }
@@ -23,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 235; 
+ * @POSICAO-CURSOR = 390; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
