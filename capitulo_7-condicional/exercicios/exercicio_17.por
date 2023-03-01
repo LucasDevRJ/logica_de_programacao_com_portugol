@@ -11,7 +11,7 @@ programa
 		escreva("Digite a quantidade de sucos desejada: ")
 		leia(quantidade)
 
-		se (quantidade > 10) {
+		se (quantidade >= 10) {
 			preco = 4.50
 		}
 
@@ -25,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 306; 
+ * @POSICAO-CURSOR = 193; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
