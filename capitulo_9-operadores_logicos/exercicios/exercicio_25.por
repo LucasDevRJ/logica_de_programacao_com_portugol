@@ -17,9 +17,9 @@ programa
 			escreva("Magreza")
 		} senao se (imc >= 18.5 e imc <= 24.9) {
 			escreva("Normal")
-		} senao se (imc >= 24.9 e imc <= 30) {
+		} senao se (imc > 24.9 e imc < 30) {
 			escreva("Sobrepeso")
-		} senao {
+		} senao se (imc >= 30) {
 			escreva("Obesidade")
 		}
 	}
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 412; 
+ * @POSICAO-CURSOR = 391; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
