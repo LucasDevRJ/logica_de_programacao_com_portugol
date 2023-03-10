@@ -1,12 +1,12 @@
 //Exemplo 67: Algoritmo para armazenar os modelos de carro Uno, HB20, Fit e Onix, e em seguida exibi-los na tela.
-//Saída alterada para não apresentar o 0º
+//Saída alterada para não apresentar o 0°
 programa
 {
 	
 	funcao inicio()
 	{
 		cadeia carro[5]
-
+  
 		//estrutura de repetição para ler os modelos dos carros do teclado e armazenar o vetor
 		para (inteiro cont = 0; cont <= 4; cont++) {
 			escreva("Digite o modelo do ", cont, " ° carro: ")
@@ -25,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 616; 
+ * @POSICAO-CURSOR = 214; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
