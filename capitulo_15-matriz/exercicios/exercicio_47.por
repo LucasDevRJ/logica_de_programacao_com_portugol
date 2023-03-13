@@ -3,40 +3,79 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro poltronas[5][4], linhaPoltronaDesejada, colunaPoltronaDesejada
-		cadeia disponibilidade
-		
-		disponibilidade = "Disponível"
+		inteiro assentos[21][2], fileira, poltrona
+		caracter continuar = 's'
 
-		escreva("--------------------|VENDAS DE POLTRONAS|--------------------")
-		para (inteiro linha = 0; linha < 5; linha++) {
-			escreva("\n")
-			para (inteiro coluna = 0; coluna < 3; coluna++) {
-				escreva("P(", linha, coluna, "): ", disponibilidade, " | ")
+		//zerando as poltronas
+		para (inteiro linha = 0; linha < 21; linha++) {
+			para (inteiro coluna = 0; coluna < 2; coluna++) {
+				assentos[linha][coluna] = 0
 			}
 		}
-		escreva("\n------------------------------------------------------------")
 
-		escreva("\nDigite a linha da poltrona desejada: ")
-		leia(linhaPoltronaDesejada)
+		enquanto (continuar == 's') {
+			escreva("Poltronas livres para venda: ")
+			//Exibindo as poltronas
 
-		escreva("Digite a coluna da poltrona desejada: ")
-		leia(colunaPoltronaDesejada)
+			para (inteiro linha = 0; linha < 21; linha++) {
+				escreva("\n")
 
-		escreva("--------------------|VENDAS DE POLTRONAS|--------------------")
-		para (inteiro linha = 0; linha < 5; linha++) {
-			escreva("\n")
-			para (inteiro coluna = 0; coluna < 3; coluna++) {
-				se (linhaPoltronaDesejada == linha e colunaPoltronaDesejada == coluna) {
-					disponibilidade = "Indisponível"
-					escreva("P(", linha, coluna, "): ", disponibilidade, " | ")
+				se (linha < 9) {
+					escreva("Fileira 0", linha + 1, " - > Poltronas: ")
 				} senao {
-					disponibilidade = "Disponível"
-					escreva("P(", linha, coluna, "): ", disponibilidade, " | ")
+					escreva("Fileira: ", linha + 1, " - > Poltronas: ")
 				}
- 			}
+
+				para (inteiro coluna = 0; coluna < 2; coluna++) {
+					se (assentos[linha][coluna] == 0) {
+						escreva(coluna + 1, "    ")
+					} senao {
+						escreva("-", "    ")
+					}
+				}
+			}
+
+			faca {
+				escreva("\nDigite a fileira desejada: ")
+				leia(fileira)
+			} enquanto (fileira < 1 ou fileira > 21)
+
+			faca {
+				escreva("\nDigite a poltrona desejada da fileira ", fileira, ": ")
+				leia(poltrona)
+			} enquanto (poltrona != 1 e poltrona != 2)
+
+			se (assentos[fileira][poltrona-1] == 0) {
+				escreva("Poltrona vendida com sucesso")
+				assentos[fileira][poltrona-1] = 1
+			} senao {
+				escreva("Essa poltrona já está ocupada, selecione outra fileira e/ou poltrona.")
+			}
+
+			escreva("\nDigite s para continuar a comprar ou n para sair: ")
+			leia(continuar)
 		}
-		escreva("\n------------------------------------------------------------")
+
+		//Exibindo as poltronas vendidas e não vendidas
+		escreva("\nFinal das vendas")
+
+		para (inteiro linha = 0; linha < 21; linha++) {
+			escreva("\n")
+
+			se (linha < 9) {
+				escreva("Fileira 0", linha + 1, " - > Poltronas: ")
+			} senao {
+				escreva("Fileira: ", linha + 1, " - > Poltronas: ")
+			}
+
+			para (inteiro coluna = 0; coluna < 2; coluna++) {
+				se (assentos[linha][coluna] == 0) {
+					escreva(coluna + 1, "    ")
+				} senao {
+					escreva("-", "    ")
+				}
+			}
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -44,7 +83,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 171; 
+ * @POSICAO-CURSOR = 282; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
