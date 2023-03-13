@@ -25,7 +25,7 @@ programa
 					para (inteiro linha = 0; linha < 9; linha++) {
 						escreva("\n")
 						para (inteiro coluna = 0; coluna < 2; coluna++) {
-							escreva("Vaga: (", linha, coluna, ") = ", vagas[linha][coluna], "     |     ")
+							escreva("Vaga: (", linha, coluna, ") = ", vagas[linha][coluna], "		")
 						}
 					}
 					escreva("\n------------------------------------------------")
@@ -62,6 +62,8 @@ programa
 						leia(placa)
 						numeroCaracteresPlaca = tx.numero_caracteres(placa)
 					}
+
+					placa = tx.caixa_alta(placa)
 
 					para (inteiro linha = 0; linha < 9; linha++) {
 						para (inteiro coluna = 0; coluna < 2; coluna++) {
@@ -107,7 +109,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 214; 
+ * @POSICAO-CURSOR = 820; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
