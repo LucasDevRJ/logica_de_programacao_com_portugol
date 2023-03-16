@@ -1,7 +1,8 @@
-//Exemplo 83: Exemplo de função com passagem de parâmetro por valor.
+//Exemplo 84: Exemplo de função com passagem de parâmetro por valor e por referência
 programa
 {
-	funcao real calcularPrecoBiscoito(inteiro qtdBiscoito, real valorBiscoito) {
+	
+	funcao real calcularPrecoBiscoito(inteiro qtdBiscoito, real &valorBiscoito) {
 		real resultado
 
 		se (qtdBiscoito > 10) {
@@ -32,13 +33,14 @@ programa
 		escreva("\n")
 		escreva("Valor total a ser pago é de R$ ", valorPagar)
 	}
+
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 400; 
+ * @POSICAO-CURSOR = 163; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
