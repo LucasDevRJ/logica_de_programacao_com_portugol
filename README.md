@@ -15,6 +15,26 @@ O livro Lógica de Programação com Portugol é um livro que consiste em ensina
 3. Coloque o projeto no Portugol
 4. Se divirta com o projeto
 
+## Conteúdos
+
+- Comando escreva
+- Variáveis
+- Operadores e expressões aritméticas
+- Comando leia
+- Condicional: se senao
+- Condicional: se senao se
+- Operadores lógicos
+- Condicional: escolha caso
+- Estrutura de repetição: para
+- Estrutura de repetição: enquanto
+- Estrutura de repetição: faca enquanto
+- Vetor
+- Matriz
+- Função
+- Função com passagem de parâmetro por valor
+- Função com passagem de parâmetro por referência
+- Entre outros
+
 ## Autor
 
 [<img src="https://avatars.githubusercontent.com/u/95040236?v=4" width=115><br><sub>Lucas Pereira de Lima</sub>](https://github.com/LucasDevRJ)
