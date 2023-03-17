@@ -6,7 +6,7 @@ O livro Lógica de Programação com Portugol é um livro que consiste em ensina
 
 ## 📁 Acesso ao projeto
 
-**Você pode baixar o projeto <a href="">aqui</a>.**
+**Você pode baixar o projeto <a href="https://github.com/LucasDevRJ/logica_de_programacao_com_portugol/archive/refs/heads/main.zip">aqui</a>.**
 
 ## 🛠️ Abrir e rodar o projeto
 
